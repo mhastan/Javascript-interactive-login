@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web component opdracht</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <header id="header">
+        <p><img src="img/logo.svg" alt=""></p>
+    </header>
+    <main>
+        <section id="login" class="loginSection">
+            <h1>Login</h1>
+            <form id="loginForm">
+                <label for="username"> Username </label>
+                <input type="text" name="name" id="name" placeholder="username" required>
+                
+                <label for="password"> Password </label>
+                <input type="password" name="password" id="password" placeholder="password" required>
+                <button type="submit" class="button">Login</button>
+            </form>
+            <p id="logged-in"></p>
+            <p id="error-text"></p>
+        </section>
+    </main>
+
+    <script src="js/controller/IndexController.js"></script>
+</body>
+
+</html>
